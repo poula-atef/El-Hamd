@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parent_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/rounded_back"
+        android:elevation="7dp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25ssp"
+            app:layout_constraintBottom_toTopOf="@+id/item_quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Item Name" />
+
+
+        <TextView
+            android:id="@+id/item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintBottom_toTopOf="@+id/sell_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/item_name"
+            tools:text="Item Quantity" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="@string/quantity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/item_quantity"
+            app:layout_constraintEnd_toStartOf="@+id/item_quantity"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/item_quantity" />
+
+        <TextView
+            android:id="@+id/sell_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintBottom_toTopOf="@+id/buy_price"
+            app:layout_constraintEnd_toEndOf="@+id/item_quantity"
+            app:layout_constraintStart_toStartOf="@+id/item_quantity"
+            app:layout_constraintTop_toBottomOf="@+id/item_quantity"
+            tools:text="Item Sell Price" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="@string/egp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/sell_price"
+            app:layout_constraintStart_toEndOf="@+id/sell_price"
+            app:layout_constraintTop_toTopOf="@+id/sell_price" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="@string/egp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/buy_price"
+            app:layout_constraintStart_toEndOf="@+id/buy_price"
+            app:layout_constraintTop_toTopOf="@+id/buy_price" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="@string/sell_price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/sell_price"
+            app:layout_constraintEnd_toStartOf="@+id/sell_price"
+            app:layout_constraintTop_toTopOf="@+id/sell_price" />
+
+        <TextView
+            android:id="@+id/buy_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintEnd_toEndOf="@+id/sell_price"
+            app:layout_constraintStart_toStartOf="@+id/sell_price"
+            app:layout_constraintTop_toBottomOf="@+id/sell_price"
+            tools:text="Item Buy Price" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="@string/buy_price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/buy_price"
+            app:layout_constraintEnd_toStartOf="@+id/buy_price"
+            app:layout_constraintTop_toTopOf="@+id/buy_price" />
+
+        <FrameLayout
+            android:id="@+id/remove_item"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/rounded_back"
+            android:backgroundTint="#D50101"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buy_price">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_delete" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

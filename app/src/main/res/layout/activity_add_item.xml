@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.AddItemActivity">
+
+        <EditText
+            android:id="@+id/item_name"
+            style="@style/item_et_style"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:hint="@string/item_name"
+            app:layout_constraintBottom_toTopOf="@+id/item_buy_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <EditText
+            android:id="@+id/item_buy_price"
+            style="@style/item_et_style"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:hint="@string/item_buy_price"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/item_sell_price"
+            app:layout_constraintEnd_toEndOf="@+id/item_name"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/item_name"
+            app:layout_constraintTop_toBottomOf="@+id/item_name" />
+
+        <EditText
+            android:id="@+id/item_sell_price"
+            style="@style/item_et_style"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:hint="@string/item_sell_price"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/item_quantity"
+            app:layout_constraintEnd_toEndOf="@+id/item_buy_price"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/item_buy_price"
+            app:layout_constraintTop_toBottomOf="@+id/item_buy_price" />
+
+        <EditText
+            android:id="@+id/item_quantity"
+            style="@style/item_et_style"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:hint="@string/item_quantity"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/add_item"
+            app:layout_constraintEnd_toEndOf="@+id/item_sell_price"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/item_sell_price"
+            app:layout_constraintTop_toBottomOf="@+id/item_sell_price" />
+
+        <FrameLayout
+            android:id="@+id/add_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/rounded_back"
+            android:backgroundTint="#049E04"
+            android:elevation="15dp"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_quantity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/sell_price"
+                app:layout_constraintStart_toStartOf="@+id/sell_price"
+                app:layout_constraintTop_toBottomOf="@+id/sell_price"
+                android:text="@string/add_item" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

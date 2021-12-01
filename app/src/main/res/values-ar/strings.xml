@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="el_hamd_super_market">سوبر ماركت الحمد</string>
+    <string name="add_item">اضافة منتج</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_sell_price">سعر الشراء</string>
+    <string name="item_buy_price">سعر البيع</string>
+    <string name="item_quantity">الكمية</string>
+    <string name="all_fields_required">جميع الخانات مطلوبه !!</string>
+    <string name="item_deleted">This item Deleted !!</string>
+    <string name="restore">استرجاع</string>
+    <string name="name">الاسم:</string>
+    <string name="quantity">الكمية:</string>
+    <string name="sell_price">سعر الشراء:</string>
+    <string name="buy_price">سعر البيع:</string>
+    <string name="egp">جنيه</string>
+    <string name="app_name">الحمد</string>
+    <string name="update_item">تحديت المنتج</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="item_et_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15sdp</item>
+        <item name="android:background">@drawable/rounded_back</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingStart">@dimen/_20sdp</item>
+        <item name="android:paddingEnd">@dimen/_20sdp</item>
+    </style>
+</resources>
